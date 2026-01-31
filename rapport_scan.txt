@@ -1,0 +1,28 @@
+# Nmap 7.98 scan initiated Sat Jan 31 10:09:39 2026 as: /usr/lib/nmap/nmap --privileged -sV -sC -O -oN rapport_scan.txt scanme.nmap.org
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.21s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 996 filtered tcp ports (no-response)
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   1024 ac:00:a0:1a:82:ff:cc:55:99:dc:67:2b:34:97:6b:75 (DSA)
+|   2048 20:3d:2d:44:62:2a:b0:5a:9d:b5:b3:05:14:c2:a6:b2 (RSA)
+|   256 96:02:bb:5e:57:54:1c:4e:45:2f:56:4c:4a:24:b2:57 (ECDSA)
+|_  256 33:fa:91:0f:e0:e1:7b:1f:6d:05:a2:b0:f1:54:41:56 (ED25519)
+53/tcp    open  domain     (generic dns response: NOTIMP)
+80/tcp    open  http       Apache httpd 2.4.7 ((Ubuntu))
+|_http-favicon: Nmap Project
+|_http-title: Go ahead and ScanMe!
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+31337/tcp open  tcpwrapped
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.98%I=7%D=1/31%Time=697DC712%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,E,"\0\x0c\0\x06\x81\x84\0\0\0\0\0\0\0\0");
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Actiontec MI424WR-GEN3I WAP (99%), DD-WRT v24-sp2 (Linux 2.4.37) (98%), Linux 3.2 (96%), Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012 (96%), Linux 4.4 (94%), Microsoft Windows XP SP3 (94%), BlueArc Titan 2100 NAS device (92%), VMware Player virtual NAT device (90%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jan 31 10:11:30 2026 -- 1 IP address (1 host up) scanned in 110.95 seconds
